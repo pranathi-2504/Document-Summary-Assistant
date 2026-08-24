@@ -29,15 +29,15 @@ The UI includes progress indicators, validation, error handling, copy/download a
 
 ## Screenshots
 
-### 1. Document Upload
+### 1. Main Page
 
 ![Document Upload](./1.png)
 
-### 2. Document Processing
+### 2. Document Processing and Extracted Text
 
 ![Document Processing](./2.png)
 
-### 3. Extracted Text
+### 3. AI Summary Options
 
 ![Extracted Text](./3.png)
 
