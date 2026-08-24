@@ -27,6 +27,28 @@ The UI includes progress indicators, validation, error handling, copy/download a
 - Improvement suggestions
 - Responsive UI
 
+## Screenshots
+
+### 1. Document Upload
+
+![Document Upload](./1.png)
+
+### 2. Document Processing
+
+![Document Processing](./2.png)
+
+### 3. Extracted Text
+
+![Extracted Text](./3.png)
+
+### 4. AI Summary
+
+![AI Summary](./4.png)
+
+### 5. Key Insights & Suggestions
+
+![Key Insights and Suggestions](./5.png)
+
 ## Tech Stack
 
 - **Next.js 16 + App Router** for full-stack web delivery and Vercel-ready deployment.
