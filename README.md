@@ -1,0 +1,97 @@
+# Document Summary Assistant
+
+## Overview
+
+Document Summary Assistant is a production-focused Next.js app that extracts text from PDFs and images, applies OCR for scanned documents, and generates structured AI insights using Google Gemini.
+
+## Features
+
+- PDF upload
+- Image upload
+- Drag-and-drop
+- PDF text extraction
+- OCR
+- Scanned PDF OCR fallback
+- AI summaries
+- Short/medium/long modes
+- Key points
+- Main ideas
+- Improvement suggestions
+- Responsive UI
+
+## Tech Stack
+
+- **Next.js 16 + App Router** for full-stack web delivery and Vercel-ready deployment.
+- **TypeScript** for strict typing and reliability.
+- **React 19** for interactive state-driven UX.
+- **Tailwind CSS v4** for fast, consistent styling.
+- **Lucide React** for clean iconography.
+- **pdfjs-dist** for extracting text and rendering pages for OCR fallback.
+- **Tesseract.js** for browser-based OCR.
+- **Google Gemini API** for structured summarization.
+- **Zod** for schema validation and robust parsing.
+
+## Architecture
+
+Upload  
+→ Validation  
+→ Extraction (PDF text or OCR)  
+→ OCR fallback for scanned PDFs  
+→ Extracted text preview  
+→ Gemini summarization API  
+→ Structured summary results
+
+## Getting Started
+
+```bash
+git clone <your-repo-url>
+cd Document-Summary-Assistant
+npm install
+```
+
+Create `.env.local`:
+
+```bash
+GEMINI_API_KEY=your_key_here
+```
+
+Run:
+
+```bash
+npm run dev
+```
+
+Then open `http://localhost:3000`.
+
+## Environment Variables
+
+- `GEMINI_API_KEY`: Required for AI summarization.
+
+If missing, extraction and OCR still work, but summary generation returns a clear configuration error.
+
+## Deployment
+
+This app is Vercel-ready.
+
+1. Push the repository to GitHub.
+2. Import the repository in Vercel.
+3. Add `GEMINI_API_KEY` in Project Settings → Environment Variables.
+4. Deploy.
+
+## Limitations
+
+- OCR accuracy depends on image/scan quality.
+- Large files take longer to process.
+- AI provider limits/quotas may apply.
+- Browser OCR can be resource intensive.
+- Scanned-PDF fallback OCR is limited to first 15 pages for performance.
+
+## Future Improvements
+
+- User accounts
+- Document history
+- Multiple language OCR
+- Export PDF
+- More AI models
+- Persistent storage
+- Side-by-side document viewer
