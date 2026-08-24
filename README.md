@@ -12,6 +12,14 @@ The client sends the extracted text and selected summary length to a secure  /a
 
 The UI includes progress indicators, validation, error handling, copy/download actions, and a reset flow. Documents are processed temporarily in the browser and are not stored permanently. The project is Vercel-ready and requires only the Gemini environment variable for deployment.
 
+## Live Demo
+
+**Live Application:**  
+[Document Summary Assistant](https://document-summary-assistant-psi-lake.vercel.app/)
+
+**Project Demo:**  
+[View Demo on Google Drive](https://drive.google.com/file/d/1LieHOpfKjC2vLsKKH0ImpEmSvx-CU32S/view?usp=sharing)
+
 ## Features
 
 - PDF upload
