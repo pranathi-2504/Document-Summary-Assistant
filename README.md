@@ -4,6 +4,14 @@
 
 Document Summary Assistant is a production-focused Next.js app that extracts text from PDFs and images, applies OCR for scanned documents, and generates structured AI insights using Google Gemini.
 
+Document Summary Assistant addresses the challenge of quickly understanding PDFs and scanned documents. The application uses Next.js, TypeScript, React, and Tailwind CSS to provide a responsive, accessible interface with drag-and-drop uploads and clear processing states.
+
+PDF.js extracts selectable PDF text page by page. When a PDF contains little or no readable text, its pages are rendered to canvas and processed with Tesseract.js OCR. Images are sent directly through the same OCR workflow. Extracted content is previewed before users select a short, medium, or long summary format.
+
+The client sends the extracted text and selected summary length to a secure  /api/summarize  route. The server calls Google Gemini using the private  GEMINI_API_KEY , requests structured JSON, validates the response with Zod, and returns the title, summary, key points, main ideas, and improvement suggestions.
+
+The UI includes progress indicators, validation, error handling, copy/download actions, and a reset flow. Documents are processed temporarily in the browser and are not stored permanently. The project is Vercel-ready and requires only the Gemini environment variable for deployment.
+
 ## Features
 
 - PDF upload
